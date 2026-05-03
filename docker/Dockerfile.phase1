@@ -11,7 +11,10 @@ RUN apt-get update \
     && rm -rf /var/lib/apt/lists/*
 
 COPY backend/phase1_review_intelligence/requirements.txt /tmp/requirements.txt
-RUN pip install --no-cache-dir -r /tmp/requirements.txt
+# Install main deps first (modern requests/urllib3 for Python 3.12), then
+# app-store-scraper without deps — its metadata pins requests==2.23, which breaks urllib3 on 3.12.
+RUN pip install --no-cache-dir -r /tmp/requirements.txt \
+    && pip install --no-cache-dir "app-store-scraper==0.3.5" --no-deps
 
 COPY backend/phase1_review_intelligence /app/backend/phase1_review_intelligence
 COPY backend/data /app/backend/data

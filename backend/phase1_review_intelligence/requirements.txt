@@ -1,10 +1,9 @@
-# app-store-scraper requires requests==2.23.0; keep urllib3 in the range requests 2.23 supports
-# so the image does not get a mixed urllib3 install (avoids urllib3.packages.six errors).
-requests==2.23.0
-urllib3==1.25.11
+# app-store-scraper is installed in Dockerfile with --no-deps so it cannot force
+# requests==2.23 / urllib3 1.25 (broken on Python 3.12: urllib3.packages.six).
+urllib3>=2.2.0,<3
+requests>=2.31.0,<3
 
 google-play-scraper
-app-store-scraper
 groq
 google-generativeai
 python-dotenv
