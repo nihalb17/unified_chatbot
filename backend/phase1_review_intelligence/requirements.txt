@@ -1,3 +1,7 @@
+# Pin HTTP stack first (avoids broken urllib3 / requests combos on slim images)
+urllib3>=2.2.0,<3
+requests>=2.31.0,<3
+
 google-play-scraper
 app-store-scraper
 groq
