@@ -1,0 +1,24 @@
+# Phase 1 — Review intelligence API (FastAPI)
+# Build (repo root): docker build -f docker/Dockerfile.phase1 -t capstone-phase1 .
+# Render: set root to repo, Dockerfile path docker/Dockerfile.phase1, add env vars from .env.sample
+
+FROM python:3.12-slim-bookworm
+
+WORKDIR /app
+
+RUN apt-get update \
+    && apt-get install -y --no-install-recommends gcc \
+    && rm -rf /var/lib/apt/lists/*
+
+COPY backend/phase1_review_intelligence/requirements.txt /tmp/requirements.txt
+RUN pip install --no-cache-dir -r /tmp/requirements.txt
+
+COPY backend/phase1_review_intelligence /app/backend/phase1_review_intelligence
+COPY backend/data /app/backend/data
+
+WORKDIR /app/backend/phase1_review_intelligence
+
+ENV PYTHONUNBUFFERED=1
+
+# Render and other hosts inject PORT; default matches local dev.
+CMD ["sh", "-c", "uvicorn api:app --host 0.0.0.0 --port ${PORT:-8000}"]

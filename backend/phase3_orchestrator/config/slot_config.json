@@ -1,0 +1,18 @@
+{
+  "work_start": "09:00",
+  "work_end": "18:00",
+  "lunch_start": "13:30",
+  "lunch_end": "14:00",
+  "gap_mins": 10,
+  "work_weekdays": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "holidays": [
+    "2026-05-11|Office Outing"
+  ]
+}

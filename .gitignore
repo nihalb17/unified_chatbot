@@ -1,0 +1,43 @@
+# Secrets and local env
+.env
+.env.local
+.env.*.local
+client_secret.json
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+
+# Node
+node_modules/
+**/node_modules/
+
+# Frontend build outputs
+.next/
+**/.next/
+dist/
+**/dist/
+*.tsbuildinfo
+
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Logs and local data (adjust if you need to version some JSON)
+*.log
+
+# Chroma / heavy local indexes (regenerate on deploy or use disk)
+backend/phase2_factsheet_rag/chroma_db/
+
+# Coverage
+htmlcov/
+.coverage

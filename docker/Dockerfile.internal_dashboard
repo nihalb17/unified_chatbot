@@ -1,0 +1,48 @@
+# Internal dashboard (Next.js standalone)
+# Build: docker build -f docker/Dockerfile.internal_dashboard -t capstone-internal-dashboard \
+#          --build-arg NEXT_PUBLIC_PHASE1_API_URL=https://phase1.example.com \
+#          --build-arg NEXT_PUBLIC_PHASE2_API_URL=https://phase2.example.com \
+#          --build-arg NEXT_PUBLIC_PHASE3_API_URL=https://phase3.example.com .
+#
+# Vercel: set the same NEXT_PUBLIC_* vars in Project Settings (no Docker required).
+
+FROM node:20-alpine AS deps
+WORKDIR /app
+COPY frontend/internal_dashboard/package.json frontend/internal_dashboard/package-lock.json ./
+RUN npm ci
+
+FROM node:20-alpine AS build
+WORKDIR /app
+COPY --from=deps /app/node_modules ./node_modules
+COPY frontend/internal_dashboard ./
+
+ARG NEXT_PUBLIC_PHASE1_API_URL=http://localhost:8000
+ARG NEXT_PUBLIC_PHASE2_API_URL=http://localhost:8001
+ARG NEXT_PUBLIC_PHASE3_API_URL=http://localhost:8002
+ENV NEXT_PUBLIC_PHASE1_API_URL=${NEXT_PUBLIC_PHASE1_API_URL}
+ENV NEXT_PUBLIC_PHASE2_API_URL=${NEXT_PUBLIC_PHASE2_API_URL}
+ENV NEXT_PUBLIC_PHASE3_API_URL=${NEXT_PUBLIC_PHASE3_API_URL}
+
+ENV NEXT_TELEMETRY_DISABLED=1
+RUN npm run build
+
+FROM node:20-alpine AS runner
+WORKDIR /app
+
+ENV NODE_ENV=production
+ENV NEXT_TELEMETRY_DISABLED=1
+
+RUN addgroup --system --gid 1001 nodejs \
+    && adduser --system --uid 1001 nextjs
+
+COPY --from=build /app/public ./public
+COPY --from=build --chown=nextjs:nodejs /app/.next/standalone ./
+COPY --from=build --chown=nextjs:nodejs /app/.next/static ./.next/static
+
+USER nextjs
+
+ENV HOSTNAME=0.0.0.0
+
+EXPOSE 3000
+
+CMD ["sh", "-c", "node server.js"]

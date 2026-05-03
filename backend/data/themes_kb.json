@@ -1,0 +1,242 @@
+{
+  "refresh_metadata": {
+    "timestamp": "2026-05-03T23:53:36.090447",
+    "total_reviews_processed": 236,
+    "source_breakdown": {
+      "playstore": 133,
+      "appstore": 103
+    }
+  },
+  "themes": [
+    {
+      "theme_name": "High Charges",
+      "short_description": "Users are concerned about high brokerage charges and other fees",
+      "sentiment": "negative",
+      "total_mentions": 17,
+      "playstore_mentions": 12,
+      "appstore_mentions": 5,
+      "representative_quotes": [
+        {
+          "text": "This is a third-class app. Never trade on it because they charge extra money in the name of brokerage and other taxes. You will lose almost all your profit. I traded and made \u20b915,000, but only \u20b92,700 got credited\u2014isn\u2019t that insane? And this is not the first time this has happened. Earlier, when the profit was higher, I ignored it, but this time it was too much. It\u2019s better to trade with other apps like Dhan. This is a complete waste of time and money.",
+          "source": "playstore"
+        },
+        {
+          "text": "The taxes and brokerage is costlier compared to Dhan and Zerodha but the smooth experience makes me forget that and it makes me wanting to stick with this app for trading but thee only thing which I fit is missing is 1) the trailing SL and target directly from charts(like the ones in Dhan app) which makes quite easier to trail both SL and target levels. 2) changing between stocks which are added your personal created wishlist from charts itself.",
+          "source": "playstore"
+        },
+        {
+          "text": "I am very disappointed with Groww. The platform charges high fees on almost every transaction, whether the investment amount is small or large. There also appear to be extra or hidden charges, making it costly for investors. These high costs reduce overall returns and make the experience frustrating. Groww should improve transparency and lower its charges to support small investors. Currently, it does not feel user-friendly or affordable.",
+          "source": "playstore"
+        }
+      ],
+      "actionable_item": "Review recent feedback related to 'High Charges' to identify and resolve root causes."
+    },
+    {
+      "theme_name": "App Crashes",
+      "short_description": "The app crashes or freezes, causing issues with trading and transactions",
+      "sentiment": "negative",
+      "total_mentions": 9,
+      "playstore_mentions": 8,
+      "appstore_mentions": 1,
+      "representative_quotes": [
+        {
+          "text": "recently u r app quality has deteriorated vastly, app crashing, groww balance disappearing and loading after 30min , MF sip auto pay not working, stock classified incorrectly, tax implications not mentioned for many mutual funds.. most annoying is ur support team closing tickets without remedy and with answering to the query just pushing the ball to our court saying I called u , but u didn't respond. either I respond or not, issue is clearly mentioned, they just reply it is resolved or wip",
+          "source": "playstore"
+        },
+        {
+          "text": "Bas app, be careful. Non supportive customer care. Maximum time number not connecting. Call cut down in between conversation if somehow connects. App frequently crashes. Today it crashed when I tried to exit from F&O and it doesn't load data. Throwback errors. Due to which I got into negative money and market closed and my money put on hold. Now, tomorrow is expiry and all premium will be cut out. I lost money. I am definitely uninstalling this app after collecting whatever left with me.",
+          "source": "playstore"
+        },
+        {
+          "text": "i use grow app is more than 5 year but now grow is very bad and irritated app because i trade and app is not working properly slowly and hang very big bug not exit very early and much issues now i wil losses make to this app is bug ....so now some day i thinks is app owner game ...so plz not use grow my 5 year trust will now end ...i uninstall this app...very very very very badddd and you ask to AI answer is worst app for trading.",
+          "source": "playstore"
+        }
+      ],
+      "actionable_item": "Review recent feedback related to 'App Crashes' to identify and resolve root causes."
+    },
+    {
+      "theme_name": "Poor Customer Support",
+      "short_description": "Users are unhappy with the customer support, citing unresponsive or unhelpful representatives",
+      "sentiment": "negative",
+      "total_mentions": 5,
+      "playstore_mentions": 4,
+      "appstore_mentions": 1,
+      "representative_quotes": [
+        {
+          "text": "no support system for customer... very bad service... jb dekho bs ticket raise krte rhehte h... tickets kabhi resolve nhi hotti inse ... ab is comment k reply me bhi ticket no. puch rhe h\ud83e\udd23",
+          "source": "playstore"
+        },
+        {
+          "text": "An easy to use app. The best thing about Groww is the 24*7 support system. That\u2019s great. You can sleep peacefully.",
+          "source": "appstore"
+        },
+        {
+          "text": "behad ghatiya app, aur usse bhi ghatiya hai iski costomer care services",
+          "source": "playstore"
+        }
+      ],
+      "actionable_item": "Review recent feedback related to 'Poor Customer Support' to identify and resolve root causes."
+    },
+    {
+      "theme_name": "Technical Issues",
+      "short_description": "Users experience technical problems, such as glitches, bugs, and issues with orders and transactions",
+      "sentiment": "negative",
+      "total_mentions": 26,
+      "playstore_mentions": 22,
+      "appstore_mentions": 4,
+      "representative_quotes": [
+        {
+          "text": "in grow app trading view chart is not working(9:15am to 3:30pm) . slove this trading view chart problem.................................................................................................................................................................................................................................................................................................................................................... ........................................................",
+          "source": "playstore"
+        },
+        {
+          "text": "Extremely disappointed with the GTT feature lately. I've stopped receiving critical GTT execution notifications, which used to work fine. Despite raising multiple complaints, the issue persists. In trading, every second counts\u2014this lag is unacceptable!",
+          "source": "playstore"
+        },
+        {
+          "text": "instead of wasting money on advertisement you should invest money to improve your apps UI every time i try to open charts like stock or index chart it take much more time to load and mostly it says enable to load the chart",
+          "source": "playstore"
+        }
+      ],
+      "actionable_item": "Review recent feedback related to 'Technical Issues' to identify and resolve root causes."
+    },
+    {
+      "theme_name": "Inaccurate Data",
+      "short_description": "Users report issues with inaccurate or inconsistent data, such as incorrect portfolio values or missing information",
+      "sentiment": "negative",
+      "total_mentions": 14,
+      "playstore_mentions": 12,
+      "appstore_mentions": 2,
+      "representative_quotes": [
+        {
+          "text": "it's the worst, I was investing for like 13 months in two SIP's and cancelled one of them today but after doing this my dashboard is showing less than 50% of my invested amount. Before cancelling one of my SIP my dashboard showed 5000 something and now it's spinning only 1000 something. I wanted to raise this query on their helpline but their chatgpt isn't working and also whenever I try to call on their helpline number it always does it's busy. So if you love your money, keep it away from groww",
+          "source": "playstore"
+        },
+        {
+          "text": "I have using Groww for couple of years now, from the last couple of days the app is acting weird. It never shows realtime updates of my MFs as well as the invested amount keeps changing even though there are no withdrawals. And its so hard to reach them by call, i can never get in touch with them on the number shared on the app.\n\nFix it!",
+          "source": "appstore"
+        },
+        {
+          "text": "Dear Insvester, be Careful : After Demarger graph showing like crash (Vedanta, Raymond, ABFRL, Tata Motors Passenger Vehicle etc.) please update as pro rata basis. Otherwise we trapped those stocks. \"I loose money after Demarger Raymond stock\". So please update otherwise anyone trapped like me.",
+          "source": "playstore"
+        }
+      ],
+      "actionable_item": "Review recent feedback related to 'Inaccurate Data' to identify and resolve root causes."
+    },
+    {
+      "theme_name": "Difficulty with Withdrawals",
+      "short_description": "Users have trouble withdrawing funds or face delays in the withdrawal process",
+      "sentiment": "negative",
+      "total_mentions": 3,
+      "playstore_mentions": 3,
+      "appstore_mentions": 0,
+      "representative_quotes": [
+        {
+          "text": "They charge too much! Almost zero profit. Not recommended! One more thing: You can't withdraw your money after crediting your groww account, unless you've have used that money to trade first, (suffer gain or loss) Only then you are allowed to withdraw. Simply put, your money is stuck the moment you transfer it there.",
+          "source": "playstore"
+        },
+        {
+          "text": "The customer service of grow is not good, withdrawal option is not available, they deliberately delay our amount for two days vr bad service from groww a friend suggest me for this but no any proper response from groww customer care I never suggest for this application.",
+          "source": "playstore"
+        },
+        {
+          "text": "cash withdrawal issues manegement intentionally stuck the withdrawal after waiting period.very bad experience several times for money withdrawal",
+          "source": "playstore"
+        }
+      ],
+      "actionable_item": "Review recent feedback related to 'Difficulty with Withdrawals' to identify and resolve root causes."
+    },
+    {
+      "theme_name": "Order Execution Issues",
+      "short_description": "Users experience problems with order execution, such as delayed or failed orders",
+      "sentiment": "negative",
+      "total_mentions": 21,
+      "playstore_mentions": 17,
+      "appstore_mentions": 4,
+      "representative_quotes": [
+        {
+          "text": "Very poor experience with Groww. During market hours, I was unable to exit my position manually even before 3:20 PM as the app was unresponsive. My intraday position was then delayed in square-off from 3:20 PM to 3:25 PM (as confirmed by their support). In those few minutes, my trade went from 927 profit to 2000 loss. In intraday trading, even small delays can cause serious losses. This raises concerns about platform reliability during critical times. Please consider switching to another broker",
+          "source": "playstore"
+        },
+        {
+          "text": "I have been using grow from past 2 years and zerodha upstox from past 3 yrs..Worst service from GROWW..only they will grow, they wont let you groww..suddenly you cant sell F&O orders..they app will have system issues in last half hr..suddenly you wont be able to see share prices of some shares which you can see on other app like zerodha..their customer care agent take 10-15 mins for a single reply..worst app for F&O..its a genuine feedback..customer care service is also bad",
+          "source": "appstore"
+        },
+        {
+          "text": "Pay Attention to the prices and your money while trading on this Groww App. Multiple Discrepancies, lags while doing Transactions. After settlements, they deduct more amounts. The Auto-Square off didn't work and the intraday trade was dragged beyond 3:20 Auto-Square off time. Many Transactions look shady due to Discrepancies. Customer Support, app calls and emails, is Worst. No Resolution, help, ETA, or Support after numerous attempts. Better use a different reliable app.",
+          "source": "playstore"
+        }
+      ],
+      "actionable_item": "Review recent feedback related to 'Order Execution Issues' to identify and resolve root causes."
+    },
+    {
+      "theme_name": "Lack of Features",
+      "short_description": "Users feel that the app is missing certain features, such as advanced charting or specific investment options",
+      "sentiment": "neutral",
+      "total_mentions": 16,
+      "playstore_mentions": 9,
+      "appstore_mentions": 7,
+      "representative_quotes": [
+        {
+          "text": "tradingview ka premium chart features add karo.Stocks me bhi tradingview ki tarha chart se instain buy,sell,SL,TP drag&drop se instain order lagane ka features add karo.chart ke niche jaise position,order,option chain dekhne ka features diya hai aise hi OI chart,pcr vs price combination chart and advance,dicline chart dekhne ka tool add karna chahiye.like sahi app.aur separate915 app rakhne ka kiya jarurat ta, is app ki ander hi old scalper features ko delete karke F&O section me add kar deta.",
+          "source": "playstore"
+        },
+        {
+          "text": "Not as expected. 1. Unable to find all report at one place. 2. Not able to show MF linked with Groww only once you had extracted your external funds. so you can't check performance of your MF purchased through groww. 3. MF can't be adjusted as per your own will. Supposed if you want to change your SIP from monthly to weekly it is not possible in grow. 4.",
+          "source": "playstore"
+        },
+        {
+          "text": "I Like the App, Please Include One Cancel Other Order (OCO) Feature for Delivery Trading.. and I Want to See the Sector/Industry Performance by 1D,1W,1M,3M,6M,1Y timeframes with Sort Option, and Historical Data (Previous Days Daily Percentages)",
+          "source": "playstore"
+        }
+      ],
+      "actionable_item": "Review recent feedback related to 'Lack of Features' to identify and resolve root causes."
+    },
+    {
+      "theme_name": "Trust and Security Concerns",
+      "short_description": "Users express concerns about the app's security and trustworthiness, citing issues with data protection and potential scams",
+      "sentiment": "negative",
+      "total_mentions": 11,
+      "playstore_mentions": 9,
+      "appstore_mentions": 2,
+      "representative_quotes": [
+        {
+          "text": "iske mutual funds k paise apne aap kat jaate h. ya to ye ya fir inka staff krta hoga. par jhelna to hame h. mere kai saare Mutual funds k paise nikaala liya h. upar se nahi customer care se baat ho rhi or nahi complain pe kuch ho rha h. kindly resolve it & take strict action on it. otherwise no one will use this aap if you will cheat people. agar mere paise wapas ni hue to i will handover it to police. saare fraud hi h, customer support number pe call krne k baad OTP mangta h. How can I believe",
+          "source": "playstore"
+        },
+        {
+          "text": "worst app \ud83d\ude24\ud83d\ude21\ud83e\udd2cthis is th scam to stole our money waste don't invest ur hard earned money in this they're charging all taxes and deduction \ud83e\udd2c\ud83d\ude24\ud83e\udd2cof amount monthly directly from bank without our consent and when we sell th stock deducting more amount for brokerage and services why to invest then there's is no profit to us of using this app????? Don't Invest in this app",
+          "source": "playstore"
+        },
+        {
+          "text": "\u0917\u094d\u0930\u094b\u0935 \u0910\u092a \u0910\u0938\u093e \u0916\u0930\u093e\u092c \u0910\u092a \u0939\u0948 \u091c\u093f\u0938\u092e\u0947\u0902 \u0915\u0908 \u0924\u0930\u0939 \u0938\u0947 \u092a\u0948\u0938\u093e \u092c\u0930\u094d\u092c\u093e\u0926 \u0915\u093f\u092f\u093e \u091c\u093e \u0938\u0915\u0924\u093e \u0939\u0948 \u0932\u0942\u091f \u0916\u0938\u094b\u091f \u0910\u092a \u0939\u0948 \u0906\u092a \u091f\u094d\u0930\u0947\u0921\u093f\u0902\u0917 \u0915\u0930 \u0930\u0939\u0947 \u0939\u094b\u0902\u0917\u0947 \u092a\u094d\u0930\u0949\u092b\u093f\u091f \u0939\u094b\u0928\u0947 \u0935\u093e\u0932\u093e \u0930\u0939\u0947\u0917\u093e \u092a\u0930\u0928\u094d\u0924\u0941 \u090f\u0915\u094d\u091c\u093f\u091f \u0939\u0940 \u0928\u0939\u0940\u0902 \u0939\u094b\u0917\u093e \u091c\u092c \u0924\u0915 \u0906\u092a \u0932\u0949\u0938 \u092e\u0947\u0902 \u091a\u0932\u0947 \u091c\u093e\u090f\u0902\u0917\u0947 \u092e\u0948 5\u0908\u092f\u0930 \u0938\u0947 \u0917\u094d\u0930\u094b\u0935 \u0910\u092a \u091a\u0932\u093e \u0930\u0939\u093e \u0939\u0941 \u092e\u0947\u0930\u0947 \u0938\u093e\u0925 \u0910\u0938\u093e \u0939\u0940 \u0914\u0930 \u092e\u0947\u0930\u0947 \u0915\u0930\u0940\u092c \u092a\u0939\u091a\u093e\u0928 \u0935\u093e\u0932\u0947 20 \u0932\u094b\u0917 \u091a\u0932\u093e \u0930\u0939\u0947 \u0925\u0947 \u0905\u092c \u0938\u092c \u0917\u094d\u0930\u094b\u0935 \u0910\u092a \u0915\u094b \u092c\u0949\u092f\u0915\u0949\u091f \u0915\u093f\u092f\u093e \u0964 \u0915\u092d\u0940 \u092d\u0940 \u0917\u094d\u0930\u094b\u0935 \u0910\u092a \u092e\u0924 \u091a\u0932\u093e\u0913",
+          "source": "playstore"
+        }
+      ],
+      "actionable_item": "Review recent feedback related to 'Trust and Security Concerns' to identify and resolve root causes."
+    },
+    {
+      "theme_name": "User Interface Issues",
+      "short_description": "Users report problems with the app's user interface, such as navigation issues or difficulties with finding specific features",
+      "sentiment": "positive",
+      "total_mentions": 43,
+      "playstore_mentions": 2,
+      "appstore_mentions": 41,
+      "representative_quotes": [
+        {
+          "text": "I\u2019ve been using Groww for stocks and mutual funds, and the experience has been smooth overall. The interface is clean and easy to understand, especially for beginners. Account setup, KYC, and investing are straightforward, and tracking portfolio performance is convenient.\n\nWhat I like most is the simplicity\u2014no unnecessary clutter, and everything from SIPs to IPOs is easily accessible. Transactions are usually fast, and the app runs smoothly.\n\nThat said, there\u2019s still room for improvement in customer support response time and advanced analytics for serious investors.\n\nOverall, a great app for beginners and intermediate users who want a hassle-free investing experience.",
+          "source": "appstore"
+        },
+        {
+          "text": "With simple onboarding, clutter-free interface and unified dashboard the app\u2019s very easy and convenient for beginners to use. The UI is designed to be non-technical and \"non-scary\u201d, making it easy for laypeople like me to start their investment journey. It gives us educational support like eBooks, blogs, and YouTube tutorials to teach stock market basics. It also provides essential line and candlestick charts, historical financials, and analyst ratings for quick evaluation. For beginners like me, its a perfect app.",
+          "source": "appstore"
+        },
+        {
+          "text": "Groww is the best platform in the world. Everything that you want is on the landing page which makes it very simple and easy to navigate. I downloaded all other app just to compare but I just couldn\u2019t move on to some other app. \n\nKeep up the great work guys !!! The platform is absolutely brillaint. \n\nYou just need to add a home button on pages so that with a simple click we get back to the home page.",
+          "source": "appstore"
+        }
+      ],
+      "actionable_item": "Review recent feedback related to 'User Interface Issues' to identify and resolve root causes."
+    }
+  ]
+}

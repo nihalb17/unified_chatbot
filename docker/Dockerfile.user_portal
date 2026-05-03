@@ -1,0 +1,30 @@
+# Investor user portal (Vite static build + serve)
+# Build: docker build -f docker/Dockerfile.user_portal -t capstone-user-portal \
+#          --build-arg VITE_API_URL=https://your-phase3.onrender.com .
+#
+# Vercel: prefer the framework preset (no Docker). This image is for Render or any Docker host.
+
+FROM node:20-alpine AS build
+
+WORKDIR /app
+
+COPY frontend/user_portal/package.json frontend/user_portal/package-lock.json ./
+RUN npm ci
+
+COPY frontend/user_portal ./
+
+ARG VITE_API_URL=http://127.0.0.1:8002
+ENV VITE_API_URL=${VITE_API_URL}
+
+RUN npm run build
+
+FROM node:20-alpine AS runner
+
+RUN npm install -g serve@14
+
+WORKDIR /app
+COPY --from=build /app/dist ./dist
+
+ENV NODE_ENV=production
+
+CMD ["sh", "-c", "serve -s dist -l ${PORT:-3000}"]

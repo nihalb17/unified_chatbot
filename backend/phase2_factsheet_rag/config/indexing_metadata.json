@@ -1,0 +1,105 @@
+{
+  "factsheets": {
+    "last_refreshed": "2026-05-03T18:22:21.633798+00:00",
+    "url_statuses": [
+      {
+        "url": "https://groww.in/mutual-funds/parag-parikh-long-term-value-fund-direct-growth",
+        "label": "Parag Parikh Long Term Value Fund Direct Growth",
+        "status": "success",
+        "scraped_at": "2026-05-03T18:22:15.935865+00:00",
+        "failure_reason": null,
+        "fields_extracted": 11
+      },
+      {
+        "url": "https://groww.in/mutual-funds/aditya-birla-sun-life-psu-equity-fund-direct-growth",
+        "label": "Aditya Birla Sun Life Psu Equity Fund Direct Growth",
+        "status": "success",
+        "scraped_at": "2026-05-03T18:22:16.419426+00:00",
+        "failure_reason": null,
+        "fields_extracted": 11
+      },
+      {
+        "url": "https://groww.in/mutual-funds/bandhan-small-cap-fund-direct-growth",
+        "label": "Bandhan Small Cap Fund Direct Growth",
+        "status": "success",
+        "scraped_at": "2026-05-03T18:22:16.967243+00:00",
+        "failure_reason": null,
+        "fields_extracted": 11
+      },
+      {
+        "url": "https://groww.in/mutual-funds/sbi-gold-fund-direct-growth",
+        "label": "Sbi Gold Fund Direct Growth",
+        "status": "success",
+        "scraped_at": "2026-05-03T18:22:17.456604+00:00",
+        "failure_reason": null,
+        "fields_extracted": 11
+      },
+      {
+        "url": "https://groww.in/mutual-funds/dsp-multi-asset-allocation-fund-direct-growth",
+        "label": "Dsp Multi Asset Allocation Fund Direct Growth",
+        "status": "success",
+        "scraped_at": "2026-05-03T18:22:17.835227+00:00",
+        "failure_reason": null,
+        "fields_extracted": 11
+      },
+      {
+        "url": "https://groww.in/mutual-funds/quant-elss-tax-saver-fund-direct-growth",
+        "label": "Quant Elss Tax Saver Fund Direct Growth",
+        "status": "success",
+        "scraped_at": "2026-05-03T18:22:18.604944+00:00",
+        "failure_reason": null,
+        "fields_extracted": 12
+      },
+      {
+        "url": "https://groww.in/mutual-funds/hdfc-multi-cap-fund-direct-growth",
+        "label": "Hdfc Multi Cap Fund Direct Growth",
+        "status": "success",
+        "scraped_at": "2026-05-03T18:22:19.283041+00:00",
+        "failure_reason": null,
+        "fields_extracted": 11
+      },
+      {
+        "url": "https://groww.in/mutual-funds/axis-liquid-direct-fund-growth",
+        "label": "Axis Liquid Direct Fund Growth",
+        "status": "success",
+        "scraped_at": "2026-05-03T18:22:19.827990+00:00",
+        "failure_reason": null,
+        "fields_extracted": 11
+      },
+      {
+        "url": "https://groww.in/mutual-funds/zerodha-overnight-fund-direct-growth",
+        "label": "Zerodha Overnight Fund Direct Growth",
+        "status": "success",
+        "scraped_at": "2026-05-03T18:22:20.386714+00:00",
+        "failure_reason": null,
+        "fields_extracted": 11
+      }
+    ]
+  },
+  "definitions": {
+    "last_refreshed": "2026-05-03T12:39:11.557332+00:00",
+    "url_statuses": [
+      {
+        "url": "https://groww.in/p/exit-load-in-mutual-funds",
+        "label": "Exit Load in Mutual Funds",
+        "status": "success",
+        "scraped_at": "2026-05-03T12:39:09.382717+00:00",
+        "failure_reason": null
+      },
+      {
+        "url": "https://groww.in/blog/3-steps-follow-elss-lock-period-ends",
+        "label": "Lock in",
+        "status": "success",
+        "scraped_at": "2026-05-03T12:39:09.847868+00:00",
+        "failure_reason": null
+      },
+      {
+        "url": "https://groww.in/blog/stamp-duty-on-mutual-fund-investors",
+        "label": "Stamp Duty",
+        "status": "success",
+        "scraped_at": "2026-05-03T12:39:10.276569+00:00",
+        "failure_reason": null
+      }
+    ]
+  }
+}
