@@ -1,6 +1,6 @@
 import os
 import random
-from typing import List, Dict, Any
+from typing import List, Dict, Any, Optional
 from groq import Groq
 import google.generativeai as genai
 from pydantic import BaseModel
@@ -10,15 +10,28 @@ from dotenv import load_dotenv
 
 load_dotenv(dotenv_path=os.path.join(os.path.dirname(__file__), "../../.env"))
 
-# Configure Clients
-groq_theme_client = Groq(api_key=os.getenv("GROQ_API_KEY_THEME_GENERATION"))
+_groq_theme_client: Optional[Groq] = None
 
-# Gemini Keys for rotation (Classification & Tagging)
-gemini_keys = [
-    os.getenv("GEMINI_API_KEY_PHASE1_CLASS_1"),
-    os.getenv("GEMINI_API_KEY_PHASE1_CLASS_2")
-]
-gemini_keys = [k for k in gemini_keys if k] # Filter out None or empty
+
+def _get_groq_theme_client() -> Groq:
+    """Lazy init so FastAPI can start without keys; pipeline fails at runtime if unset."""
+    global _groq_theme_client
+    if _groq_theme_client is None:
+        key = os.getenv("GROQ_API_KEY_THEME_GENERATION")
+        if not key:
+            raise RuntimeError(
+                "GROQ_API_KEY_THEME_GENERATION is not set (required for theme generation)."
+            )
+        _groq_theme_client = Groq(api_key=key)
+    return _groq_theme_client
+
+
+def _get_gemini_keys() -> list[str]:
+    keys = [
+        os.getenv("GEMINI_API_KEY_PHASE1_CLASS_1"),
+        os.getenv("GEMINI_API_KEY_PHASE1_CLASS_2"),
+    ]
+    return [k for k in keys if k]
 
 class Theme(BaseModel):
     theme_name: str
@@ -55,7 +68,7 @@ def generate_themes(sample_reviews: List[NormalizedReview]) -> List[Theme]:
     {reviews_text}
     """
     
-    chat_completion = groq_theme_client.chat.completions.create(
+    chat_completion = _get_groq_theme_client().chat.completions.create(
         messages=[{"role": "user", "content": prompt}],
         model="llama-3.3-70b-versatile",
         response_format={"type": "json_object"}
@@ -109,10 +122,15 @@ import urllib.error
 
 def classify_and_tag(reviews: List[NormalizedReview], themes: List[Theme]) -> List[Dict[str, Any]]:
     """Stage 4: Combined Classification and Sentiment Tagging in Parallel with Rate Smoothing."""
+    gemini_keys = _get_gemini_keys()
+    if not gemini_keys:
+        print("[Error] No GEMINI_API_KEY_PHASE1_CLASS_* keys set; skipping classification.")
+        return [{**r.dict(), "theme": "Other", "sentiment": "neutral"} for r in reviews]
+
     results = []
     theme_names = [t.theme_name for t in themes]
     batch_size = 50
-    
+
     # Split into batches
     batches = [reviews[i:i + batch_size] for i in range(0, len(reviews), batch_size)]
     
